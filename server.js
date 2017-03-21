@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs')
 var app = express();
 
+const port = process.env.port||3101
+
 app.get('/',(req,res)=>{
   res.send({
     name:'Jaison',
@@ -57,8 +59,8 @@ app.get('/bad',(req,res)=>{
     error:'Error Handling'
   })
 })
-app.listen(3100,()=>{
-  console.log('Server is up on 3100')
+app.listen(port,()=>{
+  console.log('Server is up on 3101 . or env variable')
 });
 
 

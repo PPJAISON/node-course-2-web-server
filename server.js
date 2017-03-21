@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs')
 var app = express();
 
-const port = process.env.port||3101
+const port = process.env.port||3000
 
 app.get('/',(req,res)=>{
   res.send({
